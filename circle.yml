@@ -1,8 +1,6 @@
 dependencies:
    override:
-    - mvn clean install
-    - mvn dependency:go-offline
-    
+    - mvn clean install    
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
